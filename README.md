@@ -9,7 +9,6 @@ Welcome to **Lesley's Blog**, a personal blog website built using HTML and CSS. 
 - [Folder Structure](#folder-structure)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
 
 ## About the Project
 
