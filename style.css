@@ -1,0 +1,64 @@
+body {
+    font-family: "Dekko", static;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  header {
+    background-color: rgb(214, 157, 50);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "LinoLetter Std", Medium, Italic;
+  }
+  
+  nav {
+    background-color: rgb(126, 126, 126);
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 255, 240);
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+
+  .portfolio-items{
+    text-align: center;
+  }
+
+  .portfolio-items p {
+ font-size: 25px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  
