@@ -1,64 +1,48 @@
-# Lesley's Blog
+# Lesley's Personal Blog
 
-Welcome to **Lesley's Blog**, a personal blog website built using HTML and CSS. The blog showcases sections such as "About Me," "Portfolio," "Photography," and "Contact." It is designed to be simple yet functional, providing external links to my portfolio and featuring personal photography.
-
-## Table of Contents
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
-- [Usage](#usage)
-- [Credits](#credits)
-
-## About the Project
-
-This project is my personal blog where I share details about myself, my portfolio, and my photography work. The blog includes:
-- A simple layout with navigation.
-- Portfolio links to my work.
-- A photo gallery with images from Hong Kong and Canada.
-- A contact form (static, not connected to a backend yet).
+Welcome to my personal blog project! This website showcases my portfolio, photography, and blog posts. It’s designed to be simple, visually appealing, and easy to navigate. Built with HTML, CSS, and Python (Flask), this project is a continuous work in progress.
 
 ## Features
-- **Custom Design**: The blog uses custom fonts, colors, and styles to create a unique look.
-- **Responsive Layout**: The website is designed to be responsive and works well on both desktop and mobile devices.
-- **Photography Gallery**: A section dedicated to displaying personal photography work.
-- **Contact Form**: A simple contact form to get in touch with me (not functional without a backend).
+- **Portfolio Section**: Showcases my design and development work, with links to external portfolios.
+- **Photography Section**: Displays a collection of personal photography work.
+- **Comment Section**: Allows users to leave feedback and interact with blog posts.
   
-## Getting Started
+## Project Setup
 
 ### Prerequisites
-To view this project locally, you will need:
-- A modern web browser (e.g., Chrome, Firefox, Safari).
-- (Optional) **VS Code** or any text editor to view or edit the HTML and CSS.
+- **Python**: Make sure Python is installed on your machine.
+- **Flask**: Install Flask using pip:
+    ```bash
+    pip install Flask
+    ```
 
-### Installation
-1. **Clone the Repository**:
-   - Clone the repository from GitHub to your local machine:
-     ```bash
-     git clone https://github.com/kayinglai/personal-blog.git
-     ```
-2. **Open the Project**:
-   - Navigate to the project folder and open the `index.html` file in your browser to view the blog.
-   - Alternatively, you can open the project in **VS Code** and use the **Live Server** extension to view it.
+### Running the Project
+1. Clone the repository:
+    ```bash
+    git clone your-repo-link
+    ```
+2. Navigate to the project folder:
+    ```bash
+    cd project-folder
+    ```
+3. Run the Flask server:
+    ```bash
+    python app.py
+    ```
+4. Open `http://127.0.0.1:5000` in your browser to view the blog.
 
-### Folder Structure
-/personal-blog │ 
-├── index.html # Main HTML file 
-├── styles.css # CSS styles for the blog 
-├── /img # Folder containing images used in the blog 
-│ ├── pro-pic.jpg # Profile picture 
-│ ├── [photography images] 
-├── README.md # This README file
+## Project Structure
+- **app.py**: Main Python file to run the Flask server and handle routes.
+- **templates/**: Contains `index.html`, which defines the blog structure.
+- **static/**: Stores CSS (`styles.css`) and images (`img/` folder) for the website.
 
+## Future Improvements
+- **Data Persistence**: Plan to add a database to store comments.
+- **Styling Enhancements**: Improve CSS styling for readability in the comment section.
+- **Additional Features**: Add “like” buttons or a rating system to enhance user interaction.
 
-## Usage
+## Contributing
+Feel free to fork this project and submit pull requests. All suggestions are welcome!
 
-- **Open in Browser**: Simply open the `index.html` file in your browser to see the blog.
-- **Live Server (VS Code)**: Use the Live Server extension in VS Code for live reloading and better viewing experience.
-
-## Credits
-
-- **Photography**: All images displayed in the photography section were taken by me.
-- **Portfolio Link**: Visit my [Portfolio](https://uxfol.io/00065220) for more details about my work.
-- **Fonts**: The blog uses the **Dekko** and **LinoLetter Std** fonts from Google Fonts.
-
+## License
+This project is open source and available under the MIT License.

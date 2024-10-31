@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dekko&family=Gamja+Flower&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesley's Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Hello! I'm Lesley, welcome to my world.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">My Works</a></li>
+            <li><a href="#works">Photography</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a web design and development student from Hong Kong, living a new life in Vancouver, Canada.<br>
+                If you can't find me at my computer, I'm either drinking coffee, or on my way to get a coffee.<br>
+                I like learning, 3D art, gaming, reading, taking photos, watching movies... Animal Crossing is my all time favourite!
+            </p>
+            <img src="{{ url_for('static', filename='img/pro pic.jpg') }}" width="15%" alt="Profile Picture">
+        </section>
+        <section id="portfolio">
+            <h2>My Works</h2>
+            <p>I'm also a Blender lover. Here's part of my 3D artworks.</p>
+            <div class="portfolio-items">
+                <img src="{{ url_for('static', filename='img/zombie robot.png') }}" width="20%">
+                <img src="{{ url_for('static', filename='img/Zurg Logo 2.png') }}" width="20%">
+                <img src="{{ url_for('static', filename='img/Bear With Ballon_PS01.png') }}" width="20%">
+                <img src="{{ url_for('static', filename='img/Stylized Animal Crossing Chocolate Tree.png') }}" width="20%">
+                <p>Here's my Web Design Portfolio.</p>
+                <a href="https://uxfol.io/00065220" target="_blank">My Portfolio</a>
+            </div>
+            
+        </section>
+        <section id="works">
+            <h2>Photography</h2>
+            <p>I do photography as a hobby.</p>
+            <div class="portfolio-items">
+                <p>HONG KONG</p>
+                <img src="{{ url_for('static', filename='img/hongkong_BW_1.jpeg') }}" width="30%">
+                <img src="{{ url_for('static', filename='img/hongkong_BW_2.jpeg') }}" width="30%">
+                <img src="{{ url_for('static', filename='img/hongkong_BW_3.jpeg') }}" width="30%">
+                <p>CANADA</p>
+                <img src="{{ url_for('static', filename='img/canada_1.jpeg') }}" width="30%">
+                <img src="{{ url_for('static', filename='img/canada_2.jpeg') }}" width="30%">
+                <img src="{{ url_for('static', filename='img/canada_3.jpeg') }}" width="30%">
+            </div>
+        </section>
+        <section id="comments">
+            <h2>Comments (Feel free to leave a comment and let me know your thoughts! :) ) </h2>
+            <form method="POST" action="/submit_comment">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <div>
+                {% for comment in comments %}
+                    <p><strong>{{ comment.username }}:</strong> {{ comment.content }}</p>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lesley's Blog</p>
+    </footer>
+</body>
+</html>
