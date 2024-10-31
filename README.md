@@ -19,11 +19,11 @@ Welcome to my personal blog project! This website showcases my portfolio, photog
 ### Running the Project
 1. Clone the repository:
     ```bash
-    git clone your-repo-link
+    git clone kayinglai/personal-blog.git
     ```
 2. Navigate to the project folder:
     ```bash
-    cd project-folder
+    cd path/to/your/folder
     ```
 3. Run the Flask server:
     ```bash
